@@ -254,6 +254,100 @@ class Ui_Form(object):
         self.verticalLayout_3.addItem(spacerItem8)
         self.horizontalLayout_10.addLayout(self.verticalLayout_3)
         self.stackedWidget.addWidget(self.page_2)
+        self.page_3 = QtWidgets.QWidget()
+        self.page_3.setObjectName("page_3")
+        self.horizontalLayout_13 = QtWidgets.QHBoxLayout(self.page_3)
+        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_6.addItem(spacerItem9)
+        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
+        spacerItem10 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_11.addItem(spacerItem10)
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_7.setSpacing(18)
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.label_3 = QtWidgets.QLabel(parent=self.page_3)
+        font = QtGui.QFont()
+        font.setFamily("阿里巴巴普惠体 2.0 55 Regular")
+        font.setPointSize(90)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("color: rgb(0, 170, 127);")
+        self.label_3.setObjectName("label_3")
+        self.verticalLayout_7.addWidget(self.label_3)
+        self.lineEdit_5 = QtWidgets.QLineEdit(parent=self.page_3)
+        font = QtGui.QFont()
+        font.setFamily("阿里巴巴普惠体 2.0 55 Regular")
+        font.setPointSize(15)
+        self.lineEdit_5.setFont(font)
+        self.lineEdit_5.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(160, 160, 160);")
+        self.lineEdit_5.setObjectName("lineEdit_5")
+        self.verticalLayout_7.addWidget(self.lineEdit_5)
+        self.lineEdit_6 = QtWidgets.QLineEdit(parent=self.page_3)
+        font = QtGui.QFont()
+        font.setFamily("阿里巴巴普惠体 2.0 55 Regular")
+        font.setPointSize(15)
+        self.lineEdit_6.setFont(font)
+        self.lineEdit_6.setStyleSheet("border-radius:15px;\n"
+"padding:5px;\n"
+"background-color: rgb(160, 160, 160);")
+        self.lineEdit_6.setEchoMode(QtWidgets.QLineEdit.EchoMode.Normal)
+        self.lineEdit_6.setObjectName("lineEdit_6")
+        self.verticalLayout_7.addWidget(self.lineEdit_6)
+        self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_12.setSpacing(100)
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
+        self.pushButton_7 = QtWidgets.QPushButton(parent=self.page_3)
+        font = QtGui.QFont()
+        font.setFamily("阿里巴巴普惠体 2.0 55 Regular")
+        font.setPointSize(25)
+        self.pushButton_7.setFont(font)
+        self.pushButton_7.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    background-color: rgb(85, 170, 0);\n"
+"    color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(0, 221, 162);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(0, 90, 66);\n"
+"}\n"
+"\n"
+"")
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.horizontalLayout_12.addWidget(self.pushButton_7)
+        self.pushButton_6 = QtWidgets.QPushButton(parent=self.page_3)
+        font = QtGui.QFont()
+        font.setFamily("阿里巴巴普惠体 2.0 55 Regular")
+        font.setPointSize(25)
+        self.pushButton_6.setFont(font)
+        self.pushButton_6.setStyleSheet("QPushButton{\n"
+"    border-radius:15px;\n"
+"    background-color: rgb(170, 170, 170);\n"
+"    color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(0, 170, 127);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(0, 0, 0);\n"
+"}")
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.horizontalLayout_12.addWidget(self.pushButton_6)
+        self.verticalLayout_7.addLayout(self.horizontalLayout_12)
+        self.horizontalLayout_11.addLayout(self.verticalLayout_7)
+        spacerItem11 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_11.addItem(spacerItem11)
+        self.verticalLayout_6.addLayout(self.horizontalLayout_11)
+        spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_6.addItem(spacerItem12)
+        self.horizontalLayout_13.addLayout(self.verticalLayout_6)
+        self.stackedWidget.addWidget(self.page_3)
         self.verticalLayout_5.addWidget(self.stackedWidget)
         self.horizontalLayout_8.addLayout(self.verticalLayout_5)
         self.horizontalLayout_5.addWidget(self.widget)
@@ -265,6 +359,11 @@ class Ui_Form(object):
         self.pushButton_3.clicked.connect(Form.open_login_page) # type: ignore
         self.pushButton_4.clicked.connect(Form.register) # type: ignore
         self.pushButton_5.clicked.connect(Form.close_window) # type: ignore
+        self.pushButton_7.clicked.connect(Form.add_school) # type: ignore
+        self.pushButton_6.clicked.connect(Form.close) # type: ignore
+        self.lineEdit_6.returnPressed.connect(Form.add_school) # type: ignore
+        self.lineEdit_2.returnPressed.connect(Form.login) # type: ignore
+        self.lineEdit_9.returnPressed.connect(Form.register) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -284,13 +383,8 @@ class Ui_Form(object):
         self.lineEdit_9.setPlaceholderText(_translate("Form", "确认密码"))
         self.pushButton_3.setText(_translate("Form", "登录"))
         self.pushButton_4.setText(_translate("Form", "注册"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Form = QtWidgets.QWidget()
-    ui = Ui_Form()
-    ui.setupUi(Form)
-    Form.show()
-    sys.exit(app.exec())
+        self.label_3.setText(_translate("Form", "创建机构"))
+        self.lineEdit_5.setPlaceholderText(_translate("Form", "机构名称"))
+        self.lineEdit_6.setPlaceholderText(_translate("Form", "机构地址"))
+        self.pushButton_7.setText(_translate("Form", "创建"))
+        self.pushButton_6.setText(_translate("Form", "返回"))

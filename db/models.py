@@ -16,6 +16,7 @@ class Base:
     @classmethod
     def select(cls, username):
         obj = db_handler.select_data(cls, username)
+        return obj
 
 
 class Admin(Base):
@@ -35,6 +36,10 @@ class Admin(Base):
             [time, teacher_name, money, "支出"],
         '''
         super().__init__(username)
+
+    def add_school(self, school_name, school_addr):
+        # 调用学校类，实例化学校对象
+        school = School(school_name, school_addr)
 
 
 class Teacher(Base):
@@ -57,4 +62,7 @@ class Course(Base):
 
 
 class School(Base):
-    pass
+    def __init__(self, school_name, school_addr):
+        self.school_addr = school_addr
+        self.course_list = []
+        super().__init__(school_name)

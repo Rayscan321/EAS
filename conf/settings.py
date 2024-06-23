@@ -2,6 +2,9 @@
 配置信息
 """
 import os
+import configparser
+import logging.config
+
 
 # 项目根路径
 BASE_DIR = os.path.dirname(
@@ -64,5 +67,13 @@ LOGGING_DIC = {
     }
 }
 
-import logging.config
 logging.config.dictConfig(LOGGING_DIC)
+
+# 配置文件相关
+config = configparser.ConfigParser()
+CONFIG_PATH = os.path.join(
+    BASE_DIR, 'settings.ini'
+)
+config.read(CONFIG_PATH, encoding='utf-8-sig')
+LOGIN_TYPE = config.get('USER', 'LOGIN_TYPE')
+LOGIN_USERNAME = config.get('USER', 'LOGIN_USERNAME')

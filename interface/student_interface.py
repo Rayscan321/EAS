@@ -1,9 +1,13 @@
 """
 学生接口
 """
+
 import os
+import logging
 from conf import settings
 from db.models import Student
+
+student_logger = logging.getLogger("student")
 
 
 def student_register_interface(username, password):
@@ -14,5 +18,6 @@ def student_register_interface(username, password):
     # 学生不存在开始注册
     # 实例化学生类，类自动保存
     student = Student(username, password)
-
-    return True, f"{username}注册成功！"
+    msg = f"{username}注册成功！"
+    student_logger.info(msg)
+    return True, msg

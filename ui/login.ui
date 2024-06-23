@@ -58,7 +58,7 @@ background-color: rgb(255, 255, 255);</string>
         <item>
          <widget class="QStackedWidget" name="stackedWidget">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page">
            <layout class="QHBoxLayout" name="horizontalLayout_9">
@@ -495,6 +495,193 @@ QPushButton:pressed{
             </item>
            </layout>
           </widget>
+          <widget class="QWidget" name="page_3">
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <item>
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <property name="spacing">
+                   <number>18</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="font">
+                     <font>
+                      <family>阿里巴巴普惠体 2.0 55 Regular</family>
+                      <pointsize>90</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 170, 127);</string>
+                    </property>
+                    <property name="text">
+                     <string>创建机构</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_5">
+                    <property name="font">
+                     <font>
+                      <family>阿里巴巴普惠体 2.0 55 Regular</family>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(160, 160, 160);</string>
+                    </property>
+                    <property name="placeholderText">
+                     <string>机构名称</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_6">
+                    <property name="font">
+                     <font>
+                      <family>阿里巴巴普惠体 2.0 55 Regular</family>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:15px;
+padding:5px;
+background-color: rgb(160, 160, 160);</string>
+                    </property>
+                    <property name="echoMode">
+                     <enum>QLineEdit::Normal</enum>
+                    </property>
+                    <property name="placeholderText">
+                     <string>机构地址</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <property name="spacing">
+                     <number>100</number>
+                    </property>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_7">
+                      <property name="font">
+                       <font>
+                        <family>阿里巴巴普惠体 2.0 55 Regular</family>
+                        <pointsize>25</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+	border-radius:15px;
+	background-color: rgb(85, 170, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(0, 221, 162);
+}
+QPushButton:pressed{
+	background-color: rgb(0, 90, 66);
+}
+
+</string>
+                      </property>
+                      <property name="text">
+                       <string>创建</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_6">
+                      <property name="font">
+                       <font>
+                        <family>阿里巴巴普惠体 2.0 55 Regular</family>
+                        <pointsize>25</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+	border-radius:15px;
+	background-color: rgb(170, 170, 170);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 127);
+}
+QPushButton:pressed{
+	background-color: rgb(0, 0, 0);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>返回</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_7">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
        </layout>
@@ -578,11 +765,91 @@ QPushButton:pressed{
    <hints>
     <hint type="sourcelabel">
      <x>779</x>
-     <y>20</y>
+     <y>36</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
      <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>add_school()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>312</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>805</x>
+     <y>493</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>569</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>803</x>
+     <y>443</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_6</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Form</receiver>
+   <slot>add_school()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>364</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>798</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Form</receiver>
+   <slot>login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>612</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>800</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_9</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Form</receiver>
+   <slot>register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>378</y>
     </hint>
    </hints>
   </connection>
@@ -593,5 +860,6 @@ QPushButton:pressed{
   <slot>open_login_page()</slot>
   <slot>register()</slot>
   <slot>close_window()</slot>
+  <slot>add_school()</slot>
  </slots>
 </ui>
